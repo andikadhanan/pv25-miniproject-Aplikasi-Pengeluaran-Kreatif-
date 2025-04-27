@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AplikasiPengeluaranKreatif</class>
+ <widget class="QMainWindow" name="AplikasiPengeluaranKreatif">
+  <property name="geometry">
+   <rect>
+    <x>200</x>
+    <y>200</y>
+    <width>500</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>💰 Pencatat Pengeluaran Kreatif</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="identitas_box">
+      <property name="title">
+       <string>👤 Identitas</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="nama_label">
+         <property name="text">
+          <string>Nama: Andika Dhanan Jaya</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="nim_label">
+         <property name="text">
+          <string>NIM: F1D022111</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="input_box">
+      <property name="title">
+       <string>📝 Form Pengeluaran</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="desc_layout">
+         <item>
+          <widget class="QLabel" name="desc_label">
+           <property name="text">
+            <string>Deskripsi:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="desc_input"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="amount_layout">
+         <item>
+          <widget class="QLabel" name="amount_label">
+           <property name="text">
+            <string>Jumlah:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="amount_input">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10000000</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="category_layout">
+         <item>
+          <widget class="QLabel" name="category_label">
+           <property name="text">
+            <string>Kategori:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="category_input">
+           <item>
+            <property name="text">
+             <string>Makanan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Transportasi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Belanja</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hiburan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Tagihan</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lainnya</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="date_layout">
+         <item>
+          <widget class="QLabel" name="date_label">
+           <property name="text">
+            <string>Tanggal:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="date_input">
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="date">
+            <date>
+             <year>2025</year>
+             <month>4</month>
+             <day>27</day>
+            </date>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="btn_layout">
+      <item>
+       <widget class="QPushButton" name="add_btn">
+        <property name="text">
+         <string>➕ Tambah</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clear_btn">
+        <property name="text">
+         <string>🗑️ Hapus Semua</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="list_box">
+      <property name="title">
+       <string>📉 Daftar Pengeluaran</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QListWidget" name="expense_list"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="statistik_label">
+      <property name="text">
+       <string>💰 Total: Rp0 | 📊 Transaksi: 0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
